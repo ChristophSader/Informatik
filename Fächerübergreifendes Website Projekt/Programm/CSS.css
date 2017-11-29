@@ -1,0 +1,182 @@
+html, body 
+{
+	
+	height: 100%;
+	width:100%;
+	background-image:url("Hintergrund.png");
+	background-size:100% 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0;
+	padding: 0;
+	
+}
+
+
+/*Für die Sterne*/
+.checked 
+{
+    color: red;
+}
+/*Für den Autor*/
+.card 
+{
+    width: 60%;
+   
+	color: white;
+	
+}
+
+.AuthorBild
+{
+	
+}
+
+ol.Auflistung
+{
+	list-style-type:circle;
+		text-align: left;
+}
+
+ol.Auflistung2
+{
+	list-style-type:circle;
+}
+
+
+
+
+img 
+{
+    border-radius: 5px 5px 0 0;
+}
+
+.container2 
+{
+    padding: 2px 16px;
+	
+}
+
+/*Haupt Div in welchem das Buch als Hitergrund ist*/
+div.Buch
+{
+    /*width: 550px;
+	height: 770px;*/
+	width: 40%;
+	height: 90%;
+    border: 2px solid black;
+    margin: auto;
+	position: relative ;
+	top:3%;
+	background-image:url("Cover.jpg");
+	background-size:100% 100%;
+	cursor:pointer;
+	
+	
+}
+
+div 
+{
+    display: block;
+}
+
+
+/*Divs(past die größen an das Div "Buch")*/
+.Plot
+{
+	width: 100%;
+	height: 17%;
+}
+.Protagonist
+{
+	width: 100%;
+	height: 18%;
+}
+.Kontext
+{
+	width: 100%;
+	height: 19%;
+}
+.Bewertung
+{
+	width: 100%;
+	height: 18%;
+}
+.Schreibstil
+{
+	width: 100%;
+	height: 14%;
+}
+.Autor
+{
+	 width: 100%;
+	height: 14%;
+}
+
+/*Div hover Funktion(verdunkeln)*/
+.Plot:hover{
+		background-color: rgba(0, 0, 0, 0.5);
+}
+
+.Protagonist:hover
+{
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.Kontext:hover
+{
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.Bewertung:hover
+{
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.Schreibstil:hover
+{
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.Autor:hover
+{
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+a:hover
+{
+	color: red;
+}
+
+/*Font Eigenschaften*/
+p
+{
+	font-family: 'Special Elite', cursive;
+	margin: 4px 0;
+	font-weight: 600;
+}
+
+li
+{
+	font-family: 'Special Elite', cursive;
+	  margin: 4px 0;
+	  font-weight: 600;
+}
+
+h2
+{
+	font-family: 'Josefin Slab', serif;
+
+}
+
+h1{
+	font-family: 'Josefin Slab', serif;
+}
+
+/*Link zu Amazon*/
+.link
+{
+	text-decoration:none;
+	color:black;
+}
+
