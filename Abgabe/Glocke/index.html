@@ -1,0 +1,69 @@
+ <!DOCTYPE html>
+<html>
+	<head>
+		<meta charset=utf-8 />
+		<title>Glocke</title>
+		<script>
+			var now = new Date();
+			var glocke1 = new Audio("singlebell.wav");
+			var glocke2 = new Audio("twobells.wav");
+			
+			stunden = now.getHours() % 4;
+			Minuten = Math.floor(now.getMinutes() / 30);
+			if(stunden == 0 && Minuten == 0)
+			{
+				consolebell(8);
+				soundbell(8);
+			}
+			else
+			{
+				consolebell(stunden * 2 + Minuten);
+				soundbell(stunden * 2 + Minuten);
+			}
+			
+			function soundbell(nummer)
+			{
+				while(nummer > 1)
+				{
+					glocke2.play();
+					nummer -= 2;
+				
+				}
+			
+				if(nummer == 1)
+				{
+					glocke1.play();
+				}
+			}
+			function consolebell(nummer)
+			{
+				var message = "";
+				while (nummer > 1)
+				{
+					message += "•• ";
+					nummer -= 2;
+				}
+				if (nummer == 1)
+				{
+					message += "•";
+				}
+				console.log(message);
+			}
+			
+			function sleep(milliseconds)
+			{
+				var start = new Date().getTime();
+				for (var i = 0; i < 1e7; i++)
+				{
+					if ((new Date().getTime() - start) > milliseconds)
+					{
+						break;
+					}
+			  }
+			}
+		</script> 
+	</head>
+	<body>
+		
+	</body>
+</html>
